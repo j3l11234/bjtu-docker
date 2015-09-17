@@ -1,5 +1,7 @@
 #!/bin/bash
 
+AUTHORIZED_KEYS = "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAykiiTgWKSpE9PL3+YeQEa6E/oMaPV/3cvKH78q+emSsC/SqA9Z2OvfdeIdApDaHY3SM8ENNB6Uwd8ajoSRe2kPh+KcfXxW2M6HneWK4hT50Q5Y4ArO66awL8tYSGJhFEtg01G0TuuwIbbNgfDdW8UfisZCVVyYpmBuDKsfIqtpHgyFY1Z+7AQwcRBAsRwIquQPMgzi9340SAv0fk++ufh643QUCA1qlc8i+lGrZuJ1blybdpf/RczO3nCNnqW2qtQSM9kizn31u3uuCZ8ENtJVw4V+ooAaIhdkmJEk9T99sOvusO2dpR28m/7cjGiJYl/VfHUyW48w18TLtJvmJrWQ== root@localhost.localdomain"
+
 if [ "${AUTHORIZED_KEYS}" != "**None**" ]; then
     echo "=> Found authorized keys"
     mkdir -p /root/.ssh
