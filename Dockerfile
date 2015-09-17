@@ -8,12 +8,14 @@ MAINTAINER j3l11234
 # -----------------------------------------------------------------------------
 
 RUN rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+RUN rpm -ivh http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0.el6.ngx.noarch.rpm
 RUN yum install -y \
 	lrzsz \
 	nginx \
 	openssh-server \
 	sudo \
 	supervisor \
+	wget \
 	&& rm -rf /var/cache/yum/* \
 	&& yum clean all
 
