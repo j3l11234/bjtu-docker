@@ -1,4 +1,3 @@
-
 FROM centos:centos6.7
 
 MAINTAINER j3l11234
